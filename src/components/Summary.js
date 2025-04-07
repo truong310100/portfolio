@@ -13,7 +13,8 @@ const Summary = () => {
       height: 150,
       type: "svg",
       shape: "square",
-      data: window.location.href,
+      // data: window.location.href,
+      data: "https://truong310100.github.io/portfolio/",
       image: logoQR, 
       margin: 1,
       dotsOptions: {
