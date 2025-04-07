@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaFacebook, FaInstagram, FaEnvelope } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaEnvelope, FaGithub } from "react-icons/fa";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
@@ -75,6 +75,12 @@ const Contact = () => {
             className="text-gray-600 hover:text-gray-800"
           >
             <FaEnvelope size={30} />
+          </a>
+          <a
+            href="https://github.com/truong310100"
+            className="text-gray-600 hover:text-gray-800"
+          >
+            <FaGithub size={30} />
           </a>
         </div>
 
