@@ -5,6 +5,7 @@ import pdf from "../assets/NguyenLamTruong-CV.pdf";
 import logoQR from "../assets/logoQR.png";
 
 const Summary = () => {
+  const dataQR = "https://truong310100.github.io/portfolio/";
   const qrCodeRef = useRef(null); 
 
   useEffect(() => {
@@ -14,7 +15,7 @@ const Summary = () => {
       type: "svg",
       shape: "square",
       // data: window.location.href,
-      data: "https://truong310100.github.io/portfolio/",
+      data: dataQR,
       image: logoQR, 
       margin: 1,
       dotsOptions: {
@@ -72,7 +73,7 @@ const Summary = () => {
               >
                 📄 Download CV
               </a>
-              <div ref={qrCodeRef} className="mt-4 rounded-lg" />
+              <a ref={qrCodeRef} href={dataQR} target="_blank" className="mt-4 rounded-lg cursor-pointer" />
             </div>
           </div>
         </div>
