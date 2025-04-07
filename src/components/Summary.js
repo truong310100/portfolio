@@ -54,9 +54,9 @@ const Summary = () => {
             <h3 className="text-2xl font-bold">NGUYEN LAM TRUONG</h3>
             <p className="text-gray-700">FullStack Developer</p>
             <div>
-              <p className="text-gray-500">Birthday: 25/01/2000</p>
-              <p className="text-gray-500">Phone: (+84) 853714 852</p>
-              <p className="text-gray-500">Location: Ho Chi Minh City, Viet Nam</p>
+              <p className="text-gray-500"><strong>Birthday:</strong> 25/01/2000</p>
+              <p className="text-gray-500"><a href="tel:+84853714852"><strong>Phone:</strong> +84 853714 852</a></p>
+              <p className="text-gray-500"><strong>Location:</strong> Ho Chi Minh City, Viet Nam</p>
             </div>
           </div>
           <div className="md:w-2/3 w-full">
