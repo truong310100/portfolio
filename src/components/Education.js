@@ -5,7 +5,7 @@ const educationData = [
     title: "Bachelor of Information Technology",
     school: "Van Hien University, Ho Chi Minh City",
     time: "2018 - 2022",
-    gpa: "2.88/4",
+    // gpa: "2.88/4",
     achievements: ["Developed a chatbot system for student admissions consultation"],
     link: "#"
   },
@@ -13,7 +13,7 @@ const educationData = [
     title: "Pedagogical Certification",
     school: "Hanoi National University of Education 2",
     time: "2024 - 01/2025",
-    gpa: "2.84/4",
+    // gpa: "2.84/4",
     achievements: [],
     link: "#"
   },
