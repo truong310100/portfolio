@@ -111,7 +111,7 @@ const workExperiences = [
     title: "sendmail.myu.vn Website",
     description: "Allows internal users to log in, upload lists, create templates, and send bulk emails.",
     time: "2025",
-    link: "https://sendmail.myu.vn/"
+    link: "https://mail.myu.vn/"
   },
   {
     title: "vanban.myu.vn Website",
