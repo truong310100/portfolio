@@ -77,6 +77,16 @@ const workExperiences = [
     time: "2024",
     link: "https://huongnghiep.h.edu.vn/"
   },
+  {
+    title: "Self-Stacking Tool for Surveillance Room Camera Access",
+    description: "A tool that automates access to surveillance room cameras with an integrated timer feature.",
+    time: "2024",
+  },
+  {
+    title: "IT Support and Helpdesk Automation Tool",
+    description: "An application that automates the setup and configuration of tools for IT support and helpdesk functions.",
+    time: "2024",
+  },
 
   // ------------------------ 2025 ------------------------
   {

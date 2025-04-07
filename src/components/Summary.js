@@ -1,8 +1,45 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import QRCodeStyling from "qr-code-styling";
 import avatar from "../assets/avatar.jpg";
-import pdf from "../assets/NguyenLamTruong-CV.pdf"; 
+import pdf from "../assets/NguyenLamTruong-CV.pdf";
+import logoQR from "../assets/logoQR.png";
 
 const Summary = () => {
+  const qrCodeRef = useRef(null); 
+
+  useEffect(() => {
+    const qrCode = new QRCodeStyling({
+      width: 150,
+      height: 150,
+      type: "svg",
+      shape: "square",
+      data: window.location.href,
+      image: logoQR, 
+      margin: 1,
+      dotsOptions: {
+        color: "#000000",
+        type: "dots",
+      },
+      backgroundOptions: {
+        color: "#ffffff",
+      },
+      cornersSquareOptions: {
+        type: "extra-rounded",
+        color: "#000000",
+      },
+      cornersDotOptions: {
+        type: "extra-rounded",
+        color: "#000000",
+      },
+      imageOptions: {
+        crossOrigin: "anonymous",
+        margin: 1,
+      },
+    });
+
+    qrCode.append(qrCodeRef.current);
+  }, []);
+
   return (
     <section id="summary" className="pt-20 px-6 py-16 bg-gray-100">
       <div className="max-w-6xl mx-auto">
@@ -17,17 +54,16 @@ const Summary = () => {
             <h3 className="text-2xl font-bold">NGUYEN LAM TRUONG</h3>
             <p className="text-gray-700">FullStack Developer</p>
             <div>
-                <p className="text-gray-500">Birthday: 25/01/2000</p>
-                <p className="text-gray-500">Phone: (+84) 853714 852</p>
-                <p className="text-gray-500">Location: Ho Chi Minh City, Viet Nam</p>
+              <p className="text-gray-500">Birthday: 25/01/2000</p>
+              <p className="text-gray-500">Phone: (+84) 853714 852</p>
+              <p className="text-gray-500">Location: Ho Chi Minh City, Viet Nam</p>
             </div>
-            
           </div>
           <div className="md:w-2/3 w-full">
             <p className="md:text-lg text-justify">
-                Hi, I'm Nguyen Lam Truong, a dedicated FullStack Developer with 2 years of experience in JavaScript, specializing in backend development using React, Node.js, Express, and Sequelize, SQL, mySQL. Proficient in RESTful API design and microservice architecture. Skilled in optimizing code for readability, reusability, and scalability. Passionate about continuously learning and contributing to a dynamic, professional environment.
+              Hi, I'm Nguyen Lam Truong, a dedicated FullStack Developer with 2 years of experience in JavaScript, specializing in backend development using React, Node.js, Express, and Sequelize, SQL, mySQL. Proficient in RESTful API design and microservice architecture. Skilled in optimizing code for readability, reusability, and scalability. Passionate about continuously learning and contributing to a dynamic, professional environment.
             </p>
-            <div className="flex justify-center items-center gap-4 mt-6">
+            <div className="flex flex-col justify-center items-center gap-4 mt-6">
               <a
                 href={pdf}
                 download
@@ -35,6 +71,7 @@ const Summary = () => {
               >
                 📄 Download CV
               </a>
+              <div ref={qrCodeRef} className="mt-4 rounded-lg" />
             </div>
           </div>
         </div>
