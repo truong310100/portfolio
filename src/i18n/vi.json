@@ -1,0 +1,15 @@
+{
+    "header": {
+      "home": "Trang chủ",
+      "about": "Về tôi",
+      "contact": "Liên hệ"
+    },
+    "footer": {
+      "copy": "© 2025 Nguyễn Lam Trường. Bảo lưu mọi quyền."
+    },
+    "contact": {
+      "title": "Liên hệ",
+      "message": "Hãy liên hệ với tôi nếu bạn có bất kỳ câu hỏi nào."
+    }
+  }
+  

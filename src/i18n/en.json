@@ -1,0 +1,15 @@
+{
+    "header": {
+      "home": "Home",
+      "about": "About Me",
+      "contact": "Contact"
+    },
+    "footer": {
+      "copy": "© 2025 Nguyen Lam Truong. All rights reserved."
+    },
+    "contact": {
+      "title": "Contact",
+      "message": "Feel free to reach out to me."
+    }
+  }
+  
