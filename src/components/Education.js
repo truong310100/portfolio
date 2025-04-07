@@ -45,7 +45,7 @@ const Education = () => {
   return (
     <section id="education" className="py-16 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold mb-6 bg-white sticky top-16 py-2">Education</h2>
+        <h2 className="text-3xl font-bold mb-6 bg-white sticky top-16 py-2">EDUCATION</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {educationData.map((edu, index) => (
             <div

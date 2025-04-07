@@ -1,8 +1,9 @@
 import React from "react";
 import Header from "./components/Header";
-import About from "./components/About";
+import Summary from "./components/Summary";
 import Skills from "./components/Skills";
 import Workings from "./components/Workings";
+import Additional from "./components/Additional";
 import Contact from "./components/Contact";
 import { Helmet } from "react-helmet";
 import Education from "./components/Education";
@@ -38,10 +39,11 @@ function App() {
       </Helmet>
       <Header />
       <main>
-        <About />
+        <Summary />
         <Skills />
         <Workings />
         <Education />
+        <Additional />
         <Contact />
       </main>
       <Footer />

@@ -49,9 +49,9 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-16 px-6 bg-gray-100">
+    <section id="contact" className="py-16 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold mb-8 sticky top-16 py-2 bg-gray-100">Contact</h2>
+        <h2 className="text-3xl font-bold mb-8 sticky top-16 py-2 bg-white">CONTACT</h2>
 
         <div className="flex justify-center gap-8 mb-8">
           <a
@@ -86,7 +86,7 @@ const Contact = () => {
               value={formData.name}
               onChange={handleChange}
               placeholder="Your Name"
-              className="p-3 border border-gray-300 rounded-md"
+              className="p-3 border border-blue-300 rounded-md outline-none focus:border-blue-500"
               required
             />
             <input
@@ -95,7 +95,7 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="Your Email"
-              className="p-3 border border-gray-300 rounded-md"
+              className="p-3 border border-blue-300 rounded-md outline-none focus:border-blue-500"
               required
             />
           </div>
@@ -106,7 +106,7 @@ const Contact = () => {
               value={formData.subject}
               onChange={handleChange}
               placeholder="Subject"
-              className="w-full p-3 border border-gray-300 rounded-md"
+              className="w-full p-3 border border-blue-300 rounded-md outline-none focus:border-blue-500"
               required
             />
           </div>
@@ -117,7 +117,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="Your Message"
               rows="5"
-              className="w-full p-3 border border-gray-300 rounded-md"
+              className="w-full p-3 border border-blue-300 rounded-md outline-none focus:border-blue-500"
               required
             ></textarea>
           </div>

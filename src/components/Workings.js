@@ -132,7 +132,7 @@ const WorkExperience = () => {
     <section id="working" className="py-16 px-6 bg-gray-100">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center justify-between mb-4 sticky top-16 bg-gray-100 py-2">
-          <h2 className="text-3xl font-bold">Working Experience</h2>
+          <h2 className="text-3xl font-bold">WORKING EXPERIENCE</h2>
           <select
             value={selectedYear}
             onChange={(e) => {
