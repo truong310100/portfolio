@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { href } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,8 +24,8 @@ const Header = () => {
   return (
     <header className="bg-blue-600 text-white p-4 fixed w-full top-0 left-0 z-10">
       <div className="flex justify-between items-center max-w-6xl mx-auto">
-        <h1 className="text-3xl font-bold border-t border-b">NLT</h1>
-
+      <a href="#summary" className="text-3xl font-bold border-t border-b cursor-pointer">NLT</a>
+      
         {/* Menu for larger screens */}
         <nav className="hidden md:flex">
           <a href="#summary" className="hover:underline underline-offset-8 px-4">Summary</a>
