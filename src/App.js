@@ -3,7 +3,7 @@ import Home from "./components/pages/Home.js";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio">
       <Routes>
         <Route path="/" element={<Home />} />
         {/* Các Route khác */}
