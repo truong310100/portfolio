@@ -1,6 +1,8 @@
 // src/i18n.js
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import enTranslation from './en.json';
+import viTranslation from './vi.json';
 
 // Cấu hình các ngôn ngữ và tài nguyên
 i18n
@@ -8,19 +10,13 @@ i18n
   .init({
     resources: {
       en: {
-        translation: {
-          welcome: "Welcome to my portfolio",
-          description: "This is a short description of my work",
-        },
+        translation: enTranslation,
       },
       vi: {
-        translation: {
-          welcome: "Chào mừng đến với portfolio của tôi",
-          description: "Đây là mô tả ngắn về công việc của tôi",
-        },
+        translation: viTranslation,
       },
     },
-    lng: 'en', // Ngôn ngữ mặc định
+    lng: localStorage.getItem('language') || 'en', // Ngôn ngữ mặc định từ localStorage
     fallbackLng: 'en', // Nếu không tìm thấy ngôn ngữ
     interpolation: {
       escapeValue: false, // React đã xử lý việc escape

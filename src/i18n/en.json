@@ -1,15 +1,120 @@
 {
     "header": {
-      "home": "Home",
-      "about": "About Me",
+      "summary": "Summary",
+      "skills": "Skills", 
+      "working": "Working",
+      "education": "Education",
+      "additional": "Additional",
       "contact": "Contact"
     },
-    "footer": {
-      "copy": "© 2025 Nguyen Lam Truong. All rights reserved."
+    "summary": {
+      "title": "Summary",
+      "greeting": "Hello, I'm",
+      "role": "Full Stack Developer",
+      "description": "Hi, I'm Nguyen Lam Truong, a dedicated FullStack Developer with 2 years of experience in JavaScript, specializing in backend development using React, Node.js, Express, and Sequelize, SQL, mySQL. Proficient in RESTful API design and microservice architecture. Skilled in optimizing code for readability, reusability, and scalability. Passionate about continuously learning and contributing to a dynamic, professional environment.",
+      "birthday": "Birthday",
+      "phone": "Phone",
+      "location": "Location",
+      "address": "Ho Chi Minh City, Viet Nam",
+      "downloadCV": "Download CV"
+    },
+    "skills": {
+      "title": "Skills",
+      "programming": "Programming Languages",
+      "backend": "Backend Development",
+      "frontend": "Frontend Development",
+      "databases": "Databases",
+      "cloud": "Cloud Platforms",
+      "versionControl": "Version Control",
+      "apis": "APIs & Integrations"
+    },
+    "working": {
+      "title": "Work Experience",
+      "totalProjects": "Total Projects",
+      "link": "Link",
+      "view": "View"
+    },
+    "education": {
+      "title": "Education",
+      "degree": "Degree",
+      "university": "University"
+    },
+    "additional": {
+      "title": "Additional Information",
+      "skills": {
+        "problemSolving": {
+          "title": "Problem Solving",
+          "description": "Analytical thinking and creative approach to finding effective solutions for complex technical challenges."
+        },
+        "timeManagement": {
+          "title": "Time Management",
+          "description": "Efficient planning and prioritization skills to meet deadlines and manage multiple projects simultaneously."
+        },
+        "teamwork": {
+          "title": "Teamwork",
+          "description": "Collaborative mindset with excellent interpersonal skills for working effectively in diverse team environments."
+        },
+        "communication": {
+          "title": "Communication",
+          "description": "Clear and effective communication skills for technical documentation and stakeholder interactions."
+        },
+        "dedication": {
+          "title": "Dedication",
+          "description": "Strong commitment to delivering high-quality work and continuous improvement in all projects."
+        },
+        "attention": {
+          "title": "Attention to Detail",
+          "description": "Meticulous approach to code quality, testing, and ensuring robust, maintainable software solutions."
+        }
+      },
+      "personalQualities": {
+        "title": "Personal Qualities & Interests",
+        "strengths": "Key Strengths",
+        "interests": "Personal Interests",
+        "strength1": "Quick learner with adaptability to new technologies",
+        "strength2": "Strong analytical and logical thinking abilities",
+        "strength3": "Proactive approach to identifying and solving problems",
+        "strength4": "Commitment to clean code and best practices",
+        "interest1": "Exploring emerging web technologies and frameworks",
+        "interest2": "Contributing to open-source projects",
+        "interest3": "Reading technology blogs and staying updated",
+        "interest4": "Building personal projects and experimenting"
+      }
     },
     "contact": {
       "title": "Contact",
-      "message": "Feel free to reach out to me."
+      "social": {
+        "facebook": "Facebook Profile",
+        "instagram": "Instagram Profile", 
+        "email": "Send Email",
+        "github": "GitHub Profile"
+      },
+      "form": {
+        "title": "Get In Touch",
+        "name": "Full Name",
+        "namePlaceholder": "Enter your full name",
+        "email": "Email Address",
+        "emailPlaceholder": "Enter your email address",
+        "subject": "Subject",
+        "subjectPlaceholder": "Enter message subject",
+        "message": "Message",
+        "messagePlaceholder": "Enter your message here...",
+        "send": "Send Message",
+        "successMessage": "Your message has been sent successfully!",
+        "errorMessage": "There was an error sending your message. Please try again."
+      }
+    },
+    "footer": {
+      "rights": "All rights reserved.",
+      "madeWith": "Made with",
+      "and": "and",
+      "inVietnam": "in Vietnam",
+      "portfolio": "Personal Portfolio"
+    },
+    "common": {
+      "darkMode": "Dark Mode",
+      "lightMode": "Light Mode",
+      "language": "Language"
     }
   }
   

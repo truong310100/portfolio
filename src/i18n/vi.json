@@ -1,15 +1,120 @@
 {
     "header": {
-      "home": "Trang chủ",
-      "about": "Về tôi",
+      "summary": "Tóm tắt",
+      "skills": "Kỹ năng",
+      "working": "Kinh nghiệm",
+      "education": "Học vấn",
+      "additional": "Thông tin bổ sung",
       "contact": "Liên hệ"
     },
-    "footer": {
-      "copy": "© 2025 Nguyễn Lam Trường. Bảo lưu mọi quyền."
+    "summary": {
+      "title": "Tóm tắt",
+      "greeting": "Xin chào, tôi là",
+      "role": "Nhà phát triển Full Stack",
+      "description": "Xin chào, tôi là Nguyễn Lâm Trường, một nhà phát triển FullStack tận tâm với 2 năm kinh nghiệm trong JavaScript, chuyên về phát triển backend sử dụng React, Node.js, Express, và Sequelize, SQL, mySQL. Thành thạo thiết kế RESTful API và kiến trúc microservice. Có kỹ năng tối ưu hóa code để dễ đọc, tái sử dụng và mở rộng. Đam mê học hỏi liên tục và đóng góp vào môi trường chuyên nghiệp, năng động.",
+      "birthday": "Sinh nhật",
+      "phone": "Điện thoại",
+      "location": "Địa chỉ",
+      "address": "Thành phố Hồ Chí Minh, Việt Nam",
+      "downloadCV": "Tải CV"
+    },
+    "skills": {
+      "title": "Kỹ năng",
+      "programming": "Ngôn ngữ lập trình",
+      "backend": "Phát triển Backend",
+      "frontend": "Phát triển Frontend",
+      "databases": "Cơ sở dữ liệu",
+      "cloud": "Nền tảng đám mây",
+      "versionControl": "Quản lý phiên bản",
+      "apis": "APIs & Tích hợp"
+    },
+    "working": {
+      "title": "Kinh nghiệm làm việc",
+      "totalProjects": "Tổng số dự án",
+      "link": "Liên kết",
+      "view": "Xem"
+    },
+    "education": {
+      "title": "Học vấn",
+      "degree": "Bằng cấp",
+      "university": "Trường đại học"
+    },
+    "additional": {
+      "title": "Thông tin bổ sung",
+      "skills": {
+        "problemSolving": {
+          "title": "Giải quyết vấn đề",
+          "description": "Tư duy phân tích và phương pháp sáng tạo để tìm ra giải pháp hiệu quả cho các thách thức kỹ thuật phức tạp."
+        },
+        "timeManagement": {
+          "title": "Quản lý thời gian",
+          "description": "Kỹ năng lập kế hoạch và ưu tiên hiệu quả để đáp ứng deadline và quản lý nhiều dự án cùng lúc."
+        },
+        "teamwork": {
+          "title": "Làm việc nhóm",
+          "description": "Tinh thần hợp tác với kỹ năng giao tiếp tốt để làm việc hiệu quả trong môi trường đội nhóm đa dạng."
+        },
+        "communication": {
+          "title": "Giao tiếp",
+          "description": "Kỹ năng giao tiếp rõ ràng và hiệu quả cho việc viết tài liệu kỹ thuật và tương tác với các bên liên quan."
+        },
+        "dedication": {
+          "title": "Sự cống hiến",
+          "description": "Cam kết mạnh mẽ trong việc cung cấp công việc chất lượng cao và cải tiến liên tục trong mọi dự án."
+        },
+        "attention": {
+          "title": "Chú ý đến chi tiết",
+          "description": "Cách tiếp cận tỉ mỉ đối với chất lượng code, testing và đảm bảo các giải pháp phần mềm bền vững, dễ bảo trì."
+        }
+      },
+      "personalQualities": {
+        "title": "Phẩm chất cá nhân & Sở thích",
+        "strengths": "Điểm mạnh chính",
+        "interests": "Sở thích cá nhân",
+        "strength1": "Học nhanh và thích ứng với công nghệ mới",
+        "strength2": "Khả năng tư duy phân tích và logic mạnh mẽ",
+        "strength3": "Cách tiếp cận chủ động trong việc xác định và giải quyết vấn đề",
+        "strength4": "Cam kết với clean code và best practices",
+        "interest1": "Khám phá các công nghệ và framework web mới nổi",
+        "interest2": "Đóng góp vào các dự án mã nguồn mở",
+        "interest3": "Đọc blog công nghệ và cập nhật thông tin",
+        "interest4": "Xây dựng dự án cá nhân và thử nghiệm"
+      }
     },
     "contact": {
       "title": "Liên hệ",
-      "message": "Hãy liên hệ với tôi nếu bạn có bất kỳ câu hỏi nào."
+      "social": {
+        "facebook": "Trang Facebook",
+        "instagram": "Trang Instagram",
+        "email": "Gửi Email",
+        "github": "Trang GitHub"
+      },
+      "form": {
+        "title": "Liên hệ với tôi",
+        "name": "Họ và tên",
+        "namePlaceholder": "Nhập họ và tên của bạn",
+        "email": "Địa chỉ email",
+        "emailPlaceholder": "Nhập địa chỉ email của bạn",
+        "subject": "Chủ đề",
+        "subjectPlaceholder": "Nhập chủ đề tin nhắn",
+        "message": "Tin nhắn",
+        "messagePlaceholder": "Nhập tin nhắn của bạn tại đây...",
+        "send": "Gửi tin nhắn",
+        "successMessage": "Tin nhắn của bạn đã được gửi thành công!",
+        "errorMessage": "Có lỗi xảy ra khi gửi tin nhắn. Vui lòng thử lại."
+      }
+    },
+    "footer": {
+      "rights": "Bảo lưu mọi quyền.",
+      "madeWith": "Được tạo với",
+      "and": "và",
+      "inVietnam": "tại Việt Nam",
+      "portfolio": "Portfolio cá nhân"
+    },
+    "common": {
+      "darkMode": "Chế độ tối",
+      "lightMode": "Chế độ sáng",
+      "language": "Ngôn ngữ"
     }
   }
   

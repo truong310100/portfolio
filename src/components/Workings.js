@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const workExperiences = [
@@ -129,6 +130,7 @@ const workExperiences = [
 
 
 const WorkExperience = () => {
+  const { t } = useTranslation();
   const years = [...new Set(workExperiences.map((exp) => exp.time))];
   const [selectedYear, setSelectedYear] = useState(years[2]);
   const [page, setPage] = useState(0);
@@ -139,17 +141,17 @@ const WorkExperience = () => {
   const totalPages = Math.ceil(filtered.length / cardsPerPage);
 
   return (
-    <section id="working" className="py-16 px-6 bg-gray-100">
+    <section id="working" className="py-16 px-6 bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
-        <div className="flex items-center justify-between mb-4 sticky top-16 bg-gray-100 py-2">
-          <h2 className="text-3xl font-bold">WORKING EXPERIENCE</h2>
+        <div className="flex items-center justify-between mb-4 sticky top-16 bg-gray-100 dark:bg-gray-900 py-2 transition-colors duration-300">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white transition-colors duration-300">{t('working.title')}</h2>
           <select
             value={selectedYear}
             onChange={(e) => {
               setSelectedYear(e.target.value);
               setPage(0);
             }}
-            className="rounded px-3 py-1 outline-none hover:border"
+            className="rounded px-3 py-1 outline-none hover:border bg-white dark:bg-gray-700 text-gray-900 dark:text-white border-gray-300 dark:border-gray-600 transition-colors duration-300"
           >
             {years.map((year) => (
               <option key={year} value={year}>
@@ -160,8 +162,8 @@ const WorkExperience = () => {
         </div>
 
         <div className="flex justify-between mb-4">
-          <span className="text-sm text-gray-500">
-            Total Projects: {filtered.length} {/* Show the total number of projects for the selected year */}
+          <span className="text-sm text-gray-500 dark:text-gray-400 transition-colors duration-300">
+            {t('working.totalProjects')}: {filtered.length}
           </span>
         </div>
 
@@ -169,17 +171,17 @@ const WorkExperience = () => {
           {paginated.map((exp, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-6 shadow-md border flex flex-col justify-between hover:shadow-lg transition duration-300"
+              className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md border dark:border-gray-700 flex flex-col justify-between hover:shadow-lg dark:hover:shadow-gray-600 transition-all duration-300 transform hover:scale-105"
             >
               <div>
-                <h3 className="text-xl font-semibold mb-1">{exp.title}</h3>
-                <p className="text-gray-700 mb-2">{exp.description}</p>
-                <p className="text-sm text-gray-500 italic mb-2">{exp.time}</p>
-                <p className="text-sm text-gray-600">Link: {exp.link}</p>
+                <h3 className="text-xl font-semibold mb-1 text-gray-900 dark:text-white transition-colors duration-300">{exp.title}</h3>
+                <p className="text-gray-700 dark:text-gray-300 mb-2 transition-colors duration-300">{exp.description}</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 italic mb-2 transition-colors duration-300">{exp.time}</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400 transition-colors duration-300">{t('working.link')}: {exp.link}</p>
               </div>
-              <div className="mt-4 text-sm text-blue-600">
+              <div className="mt-4 text-sm text-blue-600 dark:text-blue-400 transition-colors duration-300">
                 <a href={exp.link} target="_blank" rel="noopener noreferrer" className="hover:underline">
-                  View
+                  {t('working.view')}
                 </a>
               </div>
             </div>
@@ -191,19 +193,19 @@ const WorkExperience = () => {
           <button
             onClick={() => setPage((prev) => Math.max(prev - 1, 0))}
             disabled={page === 0}
-            className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300 disabled:opacity-50"
+            className="px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded hover:bg-gray-300 dark:hover:bg-gray-600 disabled:opacity-50 text-gray-900 dark:text-white transition-colors duration-300"
           >
             <FaChevronLeft />
           </button>
-          <span>
+          <span className="text-gray-900 dark:text-white transition-colors duration-300">
              {page + 1} / {totalPages}
           </span>
           <button
             onClick={() => setPage((prev) => Math.min(prev + 1, totalPages - 1))}
             disabled={page === totalPages - 1}
-            className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300 disabled:opacity-50"
+            className="px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded hover:bg-gray-300 dark:hover:bg-gray-600 disabled:opacity-50 text-gray-900 dark:text-white transition-colors duration-300"
           >
-            <FaChevronRight /> {/* Right arrow icon */}
+            <FaChevronRight />
           </button>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const educationData = [
   {
@@ -42,23 +43,25 @@ const educationData = [
 
 
 const Education = () => {
+  const { t } = useTranslation();
+
   return (
-    <section id="education" className="py-16 px-6 bg-white">
+    <section id="education" className="py-16 px-6 bg-white dark:bg-gray-800 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold mb-6 bg-white sticky top-16 py-2">EDUCATION</h2>
+        <h2 className="text-3xl font-bold mb-6 bg-white dark:bg-gray-800 sticky top-16 py-2 text-gray-900 dark:text-white transition-colors duration-300">{t('education.title')}</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {educationData.map((edu, index) => (
             <div
               key={index}
-              className="bg-gray-100 rounded-xl p-6 shadow-md border flex flex-col justify-between  hover:shadow-lg transition duration-300"
+              className="bg-gray-100 dark:bg-gray-700 rounded-xl p-6 shadow-md border dark:border-gray-600 flex flex-col justify-between hover:shadow-lg dark:hover:shadow-gray-600 transition-all duration-300 transform hover:scale-105"
             >
               <div>
-                <h3 className="text-xl font-semibold mb-1">{edu.title}</h3>
-                <p className="text-gray-700 font-medium mb-1">{edu.school}</p>
-                <p className="text-sm text-gray-500 italic mb-2">{edu.time}</p>
-                {edu.gpa && <p className="text-sm text-gray-600">GPA: {edu.gpa}</p>}
+                <h3 className="text-xl font-semibold mb-1 text-gray-900 dark:text-white transition-colors duration-300">{edu.title}</h3>
+                <p className="text-gray-700 dark:text-gray-300 font-medium mb-1 transition-colors duration-300">{edu.school}</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 italic mb-2 transition-colors duration-300">{edu.time}</p>
+                {edu.gpa && <p className="text-sm text-gray-600 dark:text-gray-400 transition-colors duration-300">GPA: {edu.gpa}</p>}
                 {edu.achievements?.length > 0 && (
-                  <ul className="list-disc list-inside mt-2 text-sm text-gray-700">
+                  <ul className="list-disc list-inside mt-2 text-sm text-gray-700 dark:text-gray-300 transition-colors duration-300">
                     {edu.achievements.map((ach, i) => (
                       <li key={i}>{ach}</li>
                     ))}
