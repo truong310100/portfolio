@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.42bd444b.css",
-    "main.js": "/portfolio/static/js/main.032f9cd5.js",
+    "main.css": "/portfolio/static/css/main.d3ce398d.css",
+    "main.js": "/portfolio/static/js/main.5ad6530a.js",
     "static/js/453.698bde0f.chunk.js": "/portfolio/static/js/453.698bde0f.chunk.js",
+    "static/media/TruongNL_Vest.png": "/portfolio/static/media/TruongNL_Vest.8322526e7690df18ebdd.png",
     "static/media/avatar.jpg": "/portfolio/static/media/avatar.fae73689a261f4bb6377.jpg",
     "static/media/NguyenLamTruong-CV.pdf": "/portfolio/static/media/NguyenLamTruong-CV.44d1055f67a0f0374874.pdf",
     "index.html": "/portfolio/index.html",
-    "main.42bd444b.css.map": "/portfolio/static/css/main.42bd444b.css.map",
-    "main.032f9cd5.js.map": "/portfolio/static/js/main.032f9cd5.js.map",
+    "main.d3ce398d.css.map": "/portfolio/static/css/main.d3ce398d.css.map",
+    "main.5ad6530a.js.map": "/portfolio/static/js/main.5ad6530a.js.map",
     "453.698bde0f.chunk.js.map": "/portfolio/static/js/453.698bde0f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.42bd444b.css",
-    "static/js/main.032f9cd5.js"
+    "static/css/main.d3ce398d.css",
+    "static/js/main.5ad6530a.js"
   ]
 }
