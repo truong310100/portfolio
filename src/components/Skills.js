@@ -50,9 +50,9 @@ const skillsData = [
       "Viettel Post API",
       "Grab Express API",
       "Momo E-wallet API",
-      "VNPAY QR động (thanh toán)",
-      "ZaloPay QR động (thanh toán)",
-      "Sacombank QR động (thanh toán)"
+      "VNPAY QR dynamic (payment)",
+      "ZaloPay QR dynamic (payment)",
+      "Sacombank QR dynamic (payment)"
     ],
     icon: FaPuzzlePiece,
     iconColor: "text-purple-600"
