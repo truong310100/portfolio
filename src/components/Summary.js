@@ -3,6 +3,7 @@ import QRCodeStyling from "qr-code-styling";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "../contexts/ThemeContext";
 import avatar from "../assets/avatar.jpg";
+import TruongNL_Vest from "../assets/TruongNL_Vest.png";
 import pdf from "../assets/NguyenLamTruong-CV.pdf";
 import logoQR from "../assets/logoQR.png";
 
@@ -60,9 +61,9 @@ const Summary = () => {
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
           <div className="md:w-1/3 w-full flex flex-col items-center gap-2">
             <img
-              src={avatar}
+              src={TruongNL_Vest}
               alt="Nguyen Lam Truong"
-              className="rounded-full w-64 h-64 object-cover shadow-lg dark:shadow-gray-700 transition-shadow duration-300"
+              className="rounded-2xl w-64 h-64 object-cover object-top shadow-lg dark:shadow-gray-700 transition-shadow duration-300"
             />
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white transition-colors duration-300">NGUYEN LAM TRUONG</h3>
             <p className="text-gray-700 dark:text-gray-300 transition-colors duration-300">{t('summary.role')}</p>

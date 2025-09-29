@@ -125,6 +125,12 @@ const workExperiences = [
     description: "Internal tool to generate shortened links and QR templates.",
     time: "2025",
     link: "https://qr.myu.vn/"
+  },
+  {
+    title: "ticket.myu.vn Website",
+    description: "Internal tool to manage event tickets.",
+    time: "2025",
+    link: "https://ticket.myu.vn/"
   }
 ];
 
@@ -145,13 +151,37 @@ const WorkExperience = () => {
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center justify-between mb-4 sticky top-16 bg-gray-100 dark:bg-gray-900 py-2 transition-colors duration-300">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white transition-colors duration-300">{t('working.title')}</h2>
+          <div className="flex items-center max-md:hidden">
+            {years.map((year, idx) => (
+              <React.Fragment key={year}>
+                <button
+                  onClick={() => {
+                    setSelectedYear(year);
+                    setPage(0);
+                  }}
+                  className={`px-4 py-1 rounded-full border-2 font-semibold text-sm transition-all duration-200
+                    ${selectedYear === year
+                      ? 'bg-blue-600 border-blue-600 text-white scale-110'
+                      : 'bg-gray-200 dark:bg-gray-700 border-gray-400 dark:border-gray-500 text-gray-800 dark:text-gray-200 hover:bg-blue-400 hover:border-blue-400 hover:text-white'}
+                `}
+                  aria-label={`Select year ${year}`}
+                >
+                  {year}
+                </button>
+                {idx < years.length - 1 && (
+                  <span className="w-8 h-0.5 bg-gray-400 dark:bg-gray-500 mx-2"></span>
+                )}
+              </React.Fragment>
+            ))}
+          </div>
+
           <select
             value={selectedYear}
             onChange={(e) => {
               setSelectedYear(e.target.value);
               setPage(0);
             }}
-            className="rounded px-3 py-1 outline-none hover:border bg-white dark:bg-gray-700 text-gray-900 dark:text-white border-gray-300 dark:border-gray-600 transition-colors duration-300"
+            className="md:hidden rounded px-3 py-1 outline-none hover:border bg-white dark:bg-gray-700 text-gray-900 dark:text-white border-gray-300 dark:border-gray-600 transition-colors duration-300"
           >
             {years.map((year) => (
               <option key={year} value={year}>

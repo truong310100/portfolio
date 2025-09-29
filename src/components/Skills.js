@@ -41,7 +41,19 @@ const skillsData = [
   },
   {
     category: "skills.apis",
-    skills: ["Facebook Graph API", "Grab API", "RESTful APIs", "OAuth 2.0"],
+    skills: [
+      "Facebook Graph API",
+      "Grab API",
+      "OAuth 2.0",
+      "RESTful APIs",
+      "GHN Express API",
+      "Viettel Post API",
+      "Grab Express API",
+      "Momo E-wallet API",
+      "VNPAY QR động (thanh toán)",
+      "ZaloPay QR động (thanh toán)",
+      "Sacombank QR động (thanh toán)"
+    ],
     icon: FaPuzzlePiece,
     iconColor: "text-purple-600"
   }
