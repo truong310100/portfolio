@@ -56,6 +56,18 @@ const skillsData = [
     ],
     icon: FaPuzzlePiece,
     iconColor: "text-purple-600"
+  },
+  {
+    category: "Devops",
+    skills: [
+      "Deploy server with Terminus, SSH",
+      "Create database with Linux/CentOS",
+      "Manage and deploy projects",
+      "Server management",
+      "Basic CI/CD with GitHub Actions and Azure DevOps"
+    ],
+    icon: FaServer, // hoặc chọn icon phù hợp hơn như FaTools, FaCogs nếu có
+    iconColor: "text-indigo-600"
   }
 ];
 
